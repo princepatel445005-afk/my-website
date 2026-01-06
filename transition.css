@@ -1,0 +1,58 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+.box {
+    width: 150px;
+    height: 100px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #2c3e50;
+    cursor: pointer;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.rotate-box {
+    background-color: #9e1a0b9c;
+}
+
+.rotate-box:hover {
+    transform: rotate(360deg);
+    background-color: #c0392b;
+}
+
+.scale-box {
+    background-color: #2f0fc2;
+    color: black;
+}
+
+.scale-box:hover {
+    transform: scale(1.3);
+    background-color: #5a0fbd;
+}
+
+.skew-box {
+    background-color: #9b59b6;
+}
+
+.skew-box:hover {
+    transform: skew(20deg);
+    background-color: #ac162f;
+}
+
+.translate-box {
+    background-color: #578a6c;
+}
+
+.translate-box:hover {
+    transform: translate(50px, 0);
+    background-color: #04391a;
+}
