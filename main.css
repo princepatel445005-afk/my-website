@@ -262,3 +262,30 @@ tr:hover { background: #fcfaf8; }
     color: #777;
     font-size: 13px;
 }
+/* --- Mobile Responsive Navigation --- */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 15px 5%;
+        flex-direction: column; /* Stack logo and links */
+        gap: 15px;
+    }
+
+    .nav-links {
+        gap: 10px;
+        flex-wrap: wrap; /* Let links wrap to next line if needed */
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    .btn-book {
+        padding: 8px 20px;
+        font-size: 14px;
+    }
+}

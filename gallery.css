@@ -74,3 +74,31 @@ body { font-family: 'Poppins', sans-serif; background: #fcfaf8; }
     70% { transform: scale(1.1); box-shadow: 0 0 0 15px rgba(212, 175, 55, 0); }
     100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(212, 175, 55, 0); }
 }
+/* --- Mobile Grid Layouts --- */
+@media (max-width: 600px) {
+    /* Gallery Grid */
+    .grid-container {
+        grid-template-columns: 1fr; /* Only one image per row */
+        grid-auto-rows: auto;
+    }
+
+    .grid-item.wide, .grid-item.tall {
+        grid-column: span 1; /* Reset special sizes to normal */
+        grid-row: span 1;
+    }
+
+    /* Room Cards */
+    .room-list {
+        grid-template-columns: 1fr;
+        padding: 0 5%;
+    }
+
+    /* Contact Page */
+    .contact-wrapper {
+        flex-direction: column; /* Form on top, Info on bottom */
+    }
+
+    .contact-form, .contact-info {
+        padding: 30px 20px;
+    }
+}
